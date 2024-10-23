@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE="google">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- for header part -->
+    <header>
+<h2>Social-Media</h2>
+        <div class="proflie">
+            <div class="dp">
+            <img src="Prof.png"  class="dpicn"   alt="dp">
+            </div>
+        </div>
+
+    </header>
+
+            <div class="box-container">
+                <div class="box box1">
+                    <div class="text">
+                        <h2 class="topic-heading">1.5k</h2>
+                        <h2 class="topic">Followers</h2>
+                    </div> <img src= "fb.png" alt="facebook"> 
+                </div>
+
+                <div class="box box2">
+                    <div class="text">
+                        <h2 class="topic-heading">1.5k</h2>
+                        <h2 class="topic">engagements</h2>
+                    </div> <img src= "fb.png" alt="facebook">
+                    <p class="percentage in-up">11.7%</p>
+                </div>
+
+                <div class="box box3">
+                    <div class="text">
+                        <h2 class="topic-heading">200</h2>
+                        <h2 class="topic">Followers</h2>
+                    </div> <img src="linkedin.png" alt="Linkedin">
+                </div>
+                <div class="box box4">
+                    <div class="text">
+                        <h2 class="topic-heading">250</h2>
+                        <h2 class="topic">View</h2>
+                    </div> <img src="linkedin.png" alt="followers">
+                </div>
+
+                <div class="box box5">
+                    <div class="text">
+                        <h2 class="topic-heading">7.8k</h2>
+                        <h2 class="topic">Follower</h2>
+                        <h3 class="topic-heading">2.5k</h3>
+                        <h3 class="topic">Like</h3>
+                    </div> <img src="inst.png" alt="follower">
+                </div>
+                <div class="box box6">
+                    <div class="text">
+                        <h3 class="topic-heading">2.5k</h3>
+                        <h3 class="topic">Like</h3>
+                    </div> <img src="inst.png" alt="follower">
+                    <p class="percentage in-up">37.4%</p>
+                </div>
+
+                <div class="box box7">
+                    <div class="text">
+                        <h3 class="topic-heading">5.2k</h3>
+                        <h2 class="topic">Followers</h2>
+                    </div> <img src="tik.png"  alt="Follower">
+                </div>
+                <div class="box box8">
+                    <div class="text">
+                        <h3 class="topic-heading">42.5k</h3>
+                        <h2 class="topic">Like</h2>
+                        <h3 class="topic-heading">400</h3>
+                        <h2 class="topic">View</h2>
+                    </div> <img src="tik.png"  alt="Follower">
+                    <p class="percentage in-up">46.3%</p>
+                </div>
+                <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                <body>
+                <div id="myPlot" style="width:100%;max-width:550px"></div>
+                <script>
+                const xArray = ["Facebook", "Linkedin", "Instgram", "Tiktok"];
+                const yArray = [30, 10, 70, 80 ];
+                const layout={title:"Social-Media dashboard"};
+                const data = [{labels:xArray, values:yArray, type:"pie"}];
+                Plotly.newPlot("myPlot", data, layout);
+                </script>
+    <script src="./index.js"></script>
+</body>
+</html>
